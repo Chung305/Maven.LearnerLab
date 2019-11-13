@@ -8,13 +8,9 @@ public class testZipCodeWilmington {
     @Test
     public void testHostLecture(){
 
-        ZipCodeWilmington zipCodeWilmington = new ZipCodeWilmington();
-        Teacher teacher = new Instructor(0, "chung");
-
-        zipCodeWilmington.hostLectures(teacher, 90);
-
-
+        ZipCodeWilmington a = ZipCodeWilmington.getInstance();
 
 
     }
+
 }
