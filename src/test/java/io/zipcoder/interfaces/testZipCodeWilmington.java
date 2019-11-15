@@ -1,6 +1,5 @@
 package io.zipcoder.interfaces;
 
-import org.junit.Assert;
 import org.junit.Test;
 
 public class testZipCodeWilmington {
@@ -11,6 +10,9 @@ public class testZipCodeWilmington {
         ZipCodeWilmington a = ZipCodeWilmington.getInstance();
 
 
+        a.hostLectures(Educator.KRIS, 90);
+
+        System.out.println(a.getStudyMap());
     }
 
 }

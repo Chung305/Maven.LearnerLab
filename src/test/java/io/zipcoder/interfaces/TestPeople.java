@@ -10,7 +10,7 @@ public class TestPeople {
         People people = new ConcretePeople();
 
         Instructor instructor = new Instructor(0, "Chung");
-        Student student = new Student(1, "Chungsing", 0.0);
+        Student student = new Student(1, "Chungsing");
 
         people.add(student);
         people.add(instructor);
@@ -24,7 +24,7 @@ public class TestPeople {
     public void testRemove(){
         People people = new ConcretePeople();
         Instructor instructor = new Instructor(0, "Chung");
-        Student student = new Student(1, "Chungsing", 0.0);
+        Student student = new Student(1, "Chungsing");
 
         people.add(student);
         people.add(instructor);
@@ -44,7 +44,7 @@ public class TestPeople {
     public void testFindById(){
         People people = new ConcretePeople();
         Instructor instructor = new Instructor(0, "Chung");
-        Student student = new Student(1, "Chungsing", 0.0);
+        Student student = new Student(1, "Chungsing");
 
         people.add(student);
         people.add(instructor);

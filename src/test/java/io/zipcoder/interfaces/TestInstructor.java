@@ -21,7 +21,7 @@ public class TestInstructor {
     @Test
     public void testTeach(){
         Instructor instructor = new Instructor(10, "Chung");
-        Student student = new Student(1, "luke", 0.0);
+        Student student = new Student(1, "luke");
 
         Double expected = 10.0;
         instructor.teach(student, expected);
@@ -36,7 +36,7 @@ public class TestInstructor {
         Student[] students = new Student[3];
 
         for(int i = 0; i < students.length; i++){
-            students[i] = new Student((long)i, "chung"+i, 0.0);
+            students[i] = new Student((long)i, "chung"+i);
         }
 
         instructor.lecture(students, 9);

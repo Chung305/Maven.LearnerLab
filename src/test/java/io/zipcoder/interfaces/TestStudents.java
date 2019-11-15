@@ -9,10 +9,13 @@ public class TestStudents {
         Students students = Students.getInstance();
 
         for(int i = 0; i < 35; i++){
-            students.add(new Student(i, "chung"+i, 0));
+            students.add(new Student(i, "chung"+i));
         }
 
         Integer expected = 35;
+
         Assert.assertEquals(expected, students.count());
+
+
     }
 }

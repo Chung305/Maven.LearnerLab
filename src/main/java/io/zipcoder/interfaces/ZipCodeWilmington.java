@@ -15,23 +15,23 @@ final class ZipCodeWilmington {
 
 
     public void hostLectures(Teacher teacher, double numberOfHours){
+        hostLecture(1, 90);
 
-        teacher.lecture(students.toArray(), numberOfHours);
+
     }
 
     public void hostLecture(long id, double numberOfHours){
-
-        Teacher teacher = new Instructor(id,"chung");
-
+        Teacher teacher = instructors.findById(id);
         teacher.lecture(students.toArray(), numberOfHours);
+
 
     }
     public HashMap<Student, Double> getStudyMap(){
         HashMap<Student, Double> studyMap = new HashMap<Student, Double>();
 
-        for(Object student: students){
-            Student a = (Student) student;
-            studyMap.put(a, a.getTotalStudyTime());
+        for(Student student: students){
+
+            studyMap.put(student, student.getTotalStudyTime());
         }
         return studyMap;
     }
@@ -40,4 +40,19 @@ final class ZipCodeWilmington {
         return zipCode;
     }
 
+    public Students getStudents() {
+        return students;
+    }
+
+    public void setStudents(Students students) {
+        this.students = students;
+    }
+
+    public Instructors getInstructors() {
+        return instructors;
+    }
+
+    public void setInstructors(Instructors instructors) {
+        this.instructors = instructors;
+    }
 }
