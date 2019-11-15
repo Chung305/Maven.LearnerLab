@@ -15,8 +15,7 @@ final class ZipCodeWilmington {
 
 
     public void hostLectures(Teacher teacher, double numberOfHours){
-        hostLecture(1, 90);
-
+        teacher.lecture(students.toArray(), numberOfHours);
 
     }
 
@@ -38,6 +37,14 @@ final class ZipCodeWilmington {
 
     public static  ZipCodeWilmington getInstance(){
         return zipCode;
+    }
+
+    @Override
+    public String toString() {
+        return "ZipCodeWilmington{" +
+                "students=" + students +
+                ", instructors=" + instructors +
+                '}';
     }
 
     public Students getStudents() {

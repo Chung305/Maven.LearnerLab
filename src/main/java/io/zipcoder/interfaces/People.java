@@ -6,7 +6,7 @@ import java.util.List;
 
 abstract class People<E extends Person> implements Iterable<E> {
 
-    private List<E> personList;
+    List<E> personList;
 
     public People(){
         this.personList = new ArrayList<E>();
